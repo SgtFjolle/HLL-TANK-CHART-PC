@@ -311,6 +311,47 @@ body.light-mode .map-answer.active {
   #image-container {
     flex: 1 1 auto;
   }
+  /* Style for the buttons */
+#variation-buttons button,
+#fullscreen-toggle {
+  padding: 10px 14px;
+  background-color: #3a3a3a;
+  border: 1px solid #666;
+  color: #fff5d8;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+/* Hover effect */
+#variation-buttons button:hover,
+#fullscreen-toggle:hover {
+  background-color: #505050;
+  transform: scale(1.05); /* Slight button scale on hover */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Light shadow effect */
+}
+
+/* Active state (when clicked) */
+#variation-buttons button.active,
+#fullscreen-toggle.active {
+  background-color: #777;
+  transform: scale(0.98); /* Slight scale on active state */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Light shadow when active */
+}
+  
+/* Initial opacity set to 0 for fade-in effect */
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+/* When the page has fully loaded, opacity will transition to 1 */
+body.loaded {
+  opacity: 1;
+}
+
+
+
 
 
