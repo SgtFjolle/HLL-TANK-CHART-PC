@@ -5,6 +5,33 @@ const armyImage = document.getElementById('army-image');
 const modeToggle = document.getElementById('mode-toggle');
 const fullscreenToggle = document.getElementById('fullscreen-toggle');
 
+// ========== FULLSCREEN TOGGLE FOR MOBILE ==========
+const imageContainer = document.getElementById('image-container');
+
+if (fullscreenToggle) {
+  fullscreenToggle.addEventListener('click', () => {
+    if (!document.body.classList.contains('fullscreen-mode')) {
+      if (imageContainer.requestFullscreen) {
+        imageContainer.requestFullscreen();
+      } else if (imageContainer.webkitRequestFullscreen) {
+        imageContainer.webkitRequestFullscreen();
+      } else if (imageContainer.msRequestFullscreen) {
+        imageContainer.msRequestFullscreen();
+      }
+      document.body.classList.add('fullscreen-mode');
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+      document.body.classList.remove('fullscreen-mode');
+    }
+  });
+}
+
 // Image map data
 const imageMap = {
   german: {
@@ -27,7 +54,9 @@ const imageMap = {
 
 let currentCategory = 'german';
 let currentVariation = '';
+let fromMapBlock = false; // Track if faction change came from map block
 
+// Update variations
 function updateVariations() {
   const category = categorySelect.value;
   currentCategory = category;
@@ -45,26 +74,34 @@ function updateVariations() {
       btn.classList.add('active');
     };
     variationButtons.appendChild(btn);
-    if (index === 0) btn.click();
+
+    if (!fromMapBlock && index === 0) {
+      btn.click(); // Auto-select first variation only from dropdown
+    }
   });
+
+  fromMapBlock = false;
 }
 
+// Show the image based on the selected variation
 function showImage(category, variation) {
+  armyImage.classList.remove('visible'); // Hide image initially
   armyImage.src = imageMap[category][variation];
   armyImage.alt = variation;
+
+  // Trigger image fade-in after it's loaded
+  setTimeout(() => {
+    armyImage.classList.add('visible');
+  }, 100);
 }
 
+// Toggle between dark and light mode
 function toggleMode() {
   const isLight = document.body.classList.toggle('light-mode');
   modeToggle.textContent = isLight ? '☀️' : '🌙';
 }
 
-fullscreenToggle.onclick = () => {
-  const isFs = document.body.classList.toggle('fullscreen-mode');
-  fullscreenToggle.classList.toggle('active', isFs);
-};
-
-// Map-selector feature
+// Map-selector logic
 const mapSelect = document.getElementById('map-select');
 const mapResult = document.getElementById('map-result');
 
@@ -169,13 +206,15 @@ mapSelect.addEventListener('change', () => {
 
   document.querySelectorAll('.map-answer').forEach(btn => {
     btn.addEventListener('click', () => {
+      fromMapBlock = true;
       categorySelect.value = btn.dataset.cat;
       updateVariations();
-      setTimeout(() => {
-        document.querySelectorAll('#variation-buttons button').forEach(vb => {
-          if (vb.textContent === btn.dataset.var) vb.click();
-        });
-      }, 0);
+
+      document.querySelectorAll('#variation-buttons button').forEach(vb => {
+        if (vb.textContent === btn.dataset.var) {
+          vb.click();
+        }
+      });
     });
   });
 });
@@ -184,8 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
   categorySelect.value = 'german';
   updateVariations();
 });
-
-
 
 
 

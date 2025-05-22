@@ -1,3 +1,14 @@
+/* Initial opacity set to 0 for fade-in effect */
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+/* When the page has fully loaded, opacity will transition to 1 */
+body.loaded {
+  opacity: 1;
+}
+
 /* Base styling */
 body {
   margin: 0;
@@ -46,7 +57,10 @@ h1 {
   flex-direction: column;
   gap: 15px;
 }
-.faction-select-group,
+.faction-select-group {
+  position: relative;  /* This ensures it is positioned normally in the flow */
+  margin-top: 0px;  /* Adjust top margin if needed */
+}
 .variation-select-group {
   display: flex;
   align-items: center;
@@ -98,17 +112,44 @@ select {
   flex: 1;
 }
 
+.section.banner-ad {
+  background-color: #2a2a2a;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Remove box-shadow temporarily */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Keep it outside of the main content */
+  left: 920px; /* Position it from the left*/
+  top: -138px; /* Position it at the top */
+  width: 440px; /* Set the desired width for the banner */
+  padding: 0; /* Remove any padding inside the banner container */
+  margin: 0; /* Remove margin */
+}
+
+#banner-image {
+  max-width: 100%;
+  height: 100%; /* Ensure the image takes the full height of the container */
+  object-fit: cover; /* Ensures the image covers the container, without gaps */
+  border-radius: 4px;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any padding from the image */
+}
+
 /* Main content: map selector + image */
 .main-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack the items vertically */
   gap: 20px;
-  position: relative; /* for absolute map panel in desktop */
+  position: relative; /* Keeps other elements in the normal flow */
+  width: 100%; /* Ensure the main content takes up full width */
 }
 
 /* Map selector panel */
 .map-selector {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 10px;
   background-color: #2a2a2a;
@@ -145,13 +186,25 @@ select {
   background-color: #666;
 }
 
+#image-container {
+  flex: 1 1 auto;
+  margin-left: 20px;
+}
+
+/* Hide the banner in fullscreen mode */
+.fullscreen-mode .section.banner-ad {
+  display: none;
+}
+
 /* Image container */
 #image-container {
+  width: 900px; /* Ensures it takes up the full width like the header */
   text-align: center;
   border: 2px solid #444;
   padding: 15px;
   background-color: #111;
   border-radius: 8px;
+  margin: 0 auto; /* Centers the container horizontally */
   transition: all 0.4s ease;
 }
 #army-image {
@@ -224,6 +277,10 @@ select {
   max-width: 95%;
   max-height: 85vh;
 }
+/* Hide banner in fullscreen mode */
+.fullscreen-mode .section.banner-ad {
+  display: none;
+}
 
 /* Light mode overrides */
 body.light-mode {
@@ -270,6 +327,82 @@ body.light-mode .map-answer.active {
   #image-container {
     flex: 1 1 auto;
   }
+  /* Style for the buttons */
+#variation-buttons button,
+#fullscreen-toggle {
+  padding: 10px 14px;
+  background-color: #3a3a3a;
+  border: 1px solid #666;
+  color: #fff5d8;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+#variation-buttons button:hover,
+#fullscreen-toggle:hover {
+  background-color: #505050;
+  transform: scale(1.05); /* Slight button scale on hover */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Light shadow effect */
+}
+
+/* Active state (when clicked) */
+#variation-buttons button.active,
+#fullscreen-toggle.active {
+  background-color: #777;
+  transform: scale(0.98); /* Slight scale on active state */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Light shadow when active */
+}
+  
+  /* ========== MOBILE STYLES ONLY ========== */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Full-width responsive image */
+  #army-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+  }
+
+  /* Show the fullscreen button only on mobile */
+  #fullscreen-toggle {
+    display: block;
+    font-size: 18px;
+    background-color: #3a3a3a;
+    color: #fff5d8;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  #fullscreen-toggle:hover {
+    background-color: #505050;
+    transform: scale(1.05);
+  }
+
+  /* When in fullscreen mode, rotate and fill screen */
+  .fullscreen-mode #army-image {
+    width: 100vh; /* Rotate layout: height becomes width */
+    height: 100vw;
+    transform: rotate(90deg);
+    object-fit: contain;
+  }
+
+  .fullscreen-mode #fullscreen-toggle {
+    display: none; /* Hide button while in fullscreen */
+  }
+}
+
 }
 
 
