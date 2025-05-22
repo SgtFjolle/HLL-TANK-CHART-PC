@@ -1,0 +1,316 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background-color: #1a1a1a;
+  color: #fff5d8;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: visible; /* allow map panel to hang off the side */
+}
+
+/* Header & mode toggle */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #FFF5D8;
+}
+#mode-toggle {
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Unified controls panel */
+.section.unified-controls {
+  background-color: #2a2a2a;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.faction-select-group {
+  position: relative;  /* This ensures it is positioned normally in the flow */
+  margin-top: 0px;  /* Adjust top margin if needed */
+}
+.variation-select-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.variation-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+select {
+  padding: 8px;
+  font-size: 1em;
+  background-color: #333;
+  color: #fff5d8;
+  border: 1px solid #555;
+  border-radius: 4px;
+  appearance: none;
+}
+#variation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#variation-buttons button,
+#fullscreen-toggle {
+  padding: 10px 14px;
+  background-color: #3a3a3a;
+  border: 1px solid #666;
+  color: #fff5d8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 14px;
+}
+#variation-buttons button:hover,
+#fullscreen-toggle:hover {
+  background-color: #505050;
+}
+#variation-buttons button.active,
+#fullscreen-toggle.active {
+  background-color: #777;
+  transform: scale(0.98);
+}
+.fullscreen-right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.section.banner-ad {
+  background-color: #2a2a2a;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Keep it outside of the main content */
+  left: 920px; /* Position it from the left*/
+  top: -138px; /* Position it at the top */
+  width: 440px; /* Set the desired width for the banner */
+}
+
+#banner-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Main content: map selector + image */
+.main-content {
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  gap: 20px;
+  position: relative; /* Keeps other elements in the normal flow */
+  width: 100%; /* Ensure the main content takes up full width */
+}
+
+/* Map selector panel */
+.map-selector {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #2a2a2a;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  padding: 15px;
+}
+.map-selector p {
+  margin: 0;
+  font-weight: normal;
+}
+.map-selector label {
+  font-weight: normal;
+}
+.map-result {
+  margin-top: 10px;
+}
+.map-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+}
+.map-answer {
+  background-color: #444;
+  color: #fff5d8;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.map-answer:hover {
+  background-color: #666;
+}
+
+#image-container {
+  flex: 1 1 auto;
+  margin-left: 20px;
+}
+
+/* Hide the banner in fullscreen mode */
+.fullscreen-mode .section.banner-ad {
+  display: none;
+}
+
+/* Image container */
+#image-container {
+  width: 900px; /* Ensures it takes up the full width like the header */
+  text-align: center;
+  border: 2px solid #444;
+  padding: 15px;
+  background-color: #111;
+  border-radius: 8px;
+  margin: 0 auto; /* Centers the container horizontally */
+  transition: all 0.4s ease;
+}
+#army-image {
+  max-width: 100%;
+  max-height: 75vh;
+  height: auto;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+/* Hide map-selector in fullscreen */
+.fullscreen-mode .map-selector {
+  display: none;
+}
+
+/* Fullscreen mode */
+.fullscreen-mode .container {
+  max-width: 90vw;
+  width: 90vw;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* no align-items here */
+}
+.fullscreen-mode .unified-controls {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  gap: 20px;
+}
+.fullscreen-mode .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.fullscreen-mode .faction-select-group {
+  flex: 1;
+}
+.fullscreen-mode .variation-row {
+  flex: 2;
+  justify-content: center;
+}
+.fullscreen-mode .variation-select-group {
+  justify-content: center;
+}
+.fullscreen-mode .fullscreen-right {
+  flex: 1;
+  justify-content: flex-end;
+}
+.fullscreen-mode #image-container {
+  /* Center the image container box */
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  width: auto;
+}
+.fullscreen-mode #army-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 95%;
+  max-height: 85vh;
+}
+/* Hide banner in fullscreen mode */
+.fullscreen-mode .section.banner-ad {
+  display: none;
+}
+
+/* Light mode overrides */
+body.light-mode {
+  background-color: #f2f2f2;
+  color: #111;
+}
+body.light-mode h1 {
+  color: #000;
+}
+body.light-mode .section.unified-controls,
+body.light-mode .map-selector {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+body.light-mode select,
+body.light-mode button,
+body.light-mode .map-answer {
+  background-color: #ddd;
+  color: #000;
+  border: 1px solid #aaa;
+}
+body.light-mode button:hover,
+body.light-mode .map-answer:hover {
+  background-color: #bbb;
+}
+body.light-mode button.active,
+body.light-mode .map-answer.active {
+  background-color: #aaa;
+}
+
+/* —— DESKTOP-ONLY LAYOUT TWEAK —— */
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .map-selector {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 450px - 220px - 50px);
+    width: 220px;
+  }
+  #image-container {
+    flex: 1 1 auto;
+  }
+}
+
+
