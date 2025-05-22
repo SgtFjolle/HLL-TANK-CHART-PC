@@ -27,7 +27,9 @@ const imageMap = {
 
 let currentCategory = 'german';
 let currentVariation = '';
+let fromMapBlock = false; // Flag to track if the faction is selected from the map block
 
+// Update variations
 function updateVariations() {
   const category = categorySelect.value;
   currentCategory = category;
@@ -45,20 +47,36 @@ function updateVariations() {
       btn.classList.add('active');
     };
     variationButtons.appendChild(btn);
-    if (index === 0) btn.click();
+
+    // If the faction selection is from the map block, don't select the first variation
+    if (!fromMapBlock && index === 0) {
+      btn.click(); // Automatically select the first variation only if the selection is from the dropdown
+    }
   });
+
+  // Reset the flag after updating variations
+  fromMapBlock = false;
 }
 
+// Show the image based on the selected variation
 function showImage(category, variation) {
-  armyImage.src = imageMap[category][variation];
+  armyImage.classList.remove('visible'); // Hide image initially
+  armyImage.src = imageMap[category][variation];  // Set the new image source
   armyImage.alt = variation;
+
+  // Trigger image fade-in after it's loaded
+  setTimeout(() => {
+    armyImage.classList.add('visible');
+  }, 100); // Small delay for smoother transition
 }
 
+// Toggle between dark and light mode
 function toggleMode() {
   const isLight = document.body.classList.toggle('light-mode');
   modeToggle.textContent = isLight ? '☀️' : '🌙';
 }
 
+// Fullscreen toggle functionality
 fullscreenToggle.onclick = () => {
   const isFs = document.body.classList.toggle('fullscreen-mode');
   fullscreenToggle.classList.toggle('active', isFs);
@@ -169,13 +187,16 @@ mapSelect.addEventListener('change', () => {
 
   document.querySelectorAll('.map-answer').forEach(btn => {
     btn.addEventListener('click', () => {
-      categorySelect.value = btn.dataset.cat;
-      updateVariations();
-      setTimeout(() => {
-        document.querySelectorAll('#variation-buttons button').forEach(vb => {
-          if (vb.textContent === btn.dataset.var) vb.click();
-        });
-      }, 0);
+      fromMapBlock = true; // Set flag to indicate the selection is from the map block
+
+      categorySelect.value = btn.dataset.cat; // Select the correct faction
+      updateVariations(); // This updates the variations based on the new category
+
+      document.querySelectorAll('#variation-buttons button').forEach(vb => {
+        if (vb.textContent === btn.dataset.var) {
+          vb.click(); // Set the variation directly, skipping the "first" default variation
+        }
+      });
     });
   });
 });
