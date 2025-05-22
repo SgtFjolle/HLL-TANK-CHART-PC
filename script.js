@@ -116,11 +116,11 @@ const mapData = {
     axis:   { category: 'german', variation: 'German Army Winter Camo' }
   },
   "Kharkov": {
-    allies: { category: 'soviet', variation: 'Soviet' },
+    allies: { category: 'soviet', variation: 'Soviet Armed Forces' },
     axis:   { category: 'german', variation: 'German Army Winter Camo' }
   },
   "Kursk": {
-    allies: { category: 'soviet', variation: 'Soviet' },
+    allies: { category: 'soviet', variation: 'Soviet Armed Forces' },
     axis:   { category: 'german', variation: 'German Army' }
   },
   "Mortain": {
@@ -148,7 +148,7 @@ const mapData = {
     axis:   { category: 'german', variation: 'German Army' }
   },
   "Stalingrad": {
-    allies: { category: 'soviet', variation: 'Soviet' },
+    allies: { category: 'soviet', variation: 'Soviet Armed Forces' },
     axis:   { category: 'german', variation: 'German Army Winter Camo' }
   },
   "Tobruk": {
@@ -204,6 +204,11 @@ mapSelect.addEventListener('change', () => {
 document.addEventListener('DOMContentLoaded', () => {
   categorySelect.value = 'german';
   updateVariations();
+});
+
+// Add "loaded" class to body when page has finished loading
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
 });
 
 
