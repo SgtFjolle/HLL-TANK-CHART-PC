@@ -46,10 +46,7 @@ h1 {
   flex-direction: column;
   gap: 15px;
 }
-.faction-select-group {
-  position: relative;  /* This ensures it is positioned normally in the flow */
-  margin-top: 0px;  /* Adjust top margin if needed */
-}
+.faction-select-group,
 .variation-select-group {
   display: flex;
   align-items: center;
@@ -101,39 +98,17 @@ select {
   flex: 1;
 }
 
-.section.banner-ad {
-  background-color: #2a2a2a;
-  border: 2px solid #000000;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute; /* Keep it outside of the main content */
-  left: 920px; /* Position it from the left*/
-  top: -138px; /* Position it at the top */
-  width: 440px; /* Set the desired width for the banner */
-}
-
-#banner-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
 /* Main content: map selector + image */
 .main-content {
   display: flex;
-  flex-direction: column; /* Stack the items vertically */
+  flex-direction: column;
   gap: 20px;
-  position: relative; /* Keeps other elements in the normal flow */
-  width: 100%; /* Ensure the main content takes up full width */
+  position: relative; /* for absolute map panel in desktop */
 }
 
 /* Map selector panel */
 .map-selector {
   display: flex;
-  flex: 1;
   flex-direction: column;
   gap: 10px;
   background-color: #2a2a2a;
@@ -170,25 +145,13 @@ select {
   background-color: #666;
 }
 
-#image-container {
-  flex: 1 1 auto;
-  margin-left: 20px;
-}
-
-/* Hide the banner in fullscreen mode */
-.fullscreen-mode .section.banner-ad {
-  display: none;
-}
-
 /* Image container */
 #image-container {
-  width: 900px; /* Ensures it takes up the full width like the header */
   text-align: center;
   border: 2px solid #444;
   padding: 15px;
   background-color: #111;
   border-radius: 8px;
-  margin: 0 auto; /* Centers the container horizontally */
   transition: all 0.4s ease;
 }
 #army-image {
@@ -260,10 +223,6 @@ select {
   margin: 0 auto;
   max-width: 95%;
   max-height: 85vh;
-}
-/* Hide banner in fullscreen mode */
-.fullscreen-mode .section.banner-ad {
-  display: none;
 }
 
 /* Light mode overrides */
