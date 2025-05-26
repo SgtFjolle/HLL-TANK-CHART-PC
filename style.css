@@ -14,7 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  overflow: visible; /* allow map panel to hang off the side */
+  overflow: visible;
+  position: relative; /* ✅ ADD THIS */
 }
 
 /* Header & mode toggle */
@@ -362,18 +363,19 @@ body.loaded {
   background: url('banner.left.jpg') center/cover no-repeat;
   border-radius: 8px;
   opacity: 0.3;
-  z-index: 2; /* ↑ increased to sit above main background */
+  z-index: 2;
   pointer-events: none;
 }
 
-
 .map-selector {
+  position: absolute;
   z-index: 3;
 }
 
 .fullscreen-mode .map-banner-left-static {
-  display: none;
+  display: none !important;
 }
+
 
 
 
