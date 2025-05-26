@@ -34,41 +34,47 @@
       </div>
     </div>
 
-    <!-- Main content: map selector + image -->
+    <!-- Main content: map selector + banner + image -->
     <div class="main-content">
-      <div class="section map-selector">
-        <p>Don’t know which faction/variation to pick?</p>
-        <label for="map-select">Select map:</label>
-        <select id="map-select">
-          <option value="">— Choose a map —</option>
-          <option>Carentan</option>
-          <option>Driel</option>
-          <option>El Alamein</option>
-          <option>Elsenborn Ridge</option>
-          <option>Foy</option>
-          <option>Hill 400</option>
-          <option>Hürtgen Forest</option>
-          <option>Kharkov</option>
-          <option>Kursk</option>
-          <option>Mortain</option>
-          <option>Omaha Beach</option>
-          <option>Purple Heart Lane</option>
-          <option>Remagen</option>
-          <option>Sainte-Marie-du-Mont</option>
-          <option>Sainte-Mère-Église</option>
-          <option>Stalingrad</option>
-          <option>Tobruk</option>
-          <option>Utah Beach</option>
-        </select>
-        <div id="map-result" class="map-result"></div>
+      <!-- Left side map selector with visual background -->
+      <div class="map-wrapper">
+        <div class="map-banner-left"></div>
+        <div class="section map-selector">
+          <p>Don’t know which faction/variation to pick?</p>
+          <label for="map-select">Select map:</label>
+          <select id="map-select">
+            <option value="">— Choose a map —</option>
+            <option>Carentan</option>
+            <option>Driel</option>
+            <option>El Alamein</option>
+            <option>Elsenborn Ridge</option>
+            <option>Foy</option>
+            <option>Hill 400</option>
+            <option>Hürtgen Forest</option>
+            <option>Kharkov</option>
+            <option>Kursk</option>
+            <option>Mortain</option>
+            <option>Omaha Beach</option>
+            <option>Purple Heart Lane</option>
+            <option>Remagen</option>
+            <option>Sainte-Marie-du-Mont</option>
+            <option>Sainte-Mère-Église</option>
+            <option>Stalingrad</option>
+            <option>Tobruk</option>
+            <option>Utah Beach</option>
+          </select>
+          <div id="map-result" class="map-result"></div>
+        </div>
       </div>
 
-        <div class="section banner-ad">
-    <a href="https://buymeacoffee.com/sgtfjolle" target="_blank">
-    <img src="banner.ad.jpg" alt="Banner Advertisement" id="banner-image">
-  </a>
-  </div>
-      
+      <!-- Right side banner -->
+      <div class="section banner-ad">
+        <a href="https://buymeacoffee.com/sgtfjolle" target="_blank">
+          <img src="banner.ad.jpg" alt="Banner Advertisement" id="banner-image">
+        </a>
+      </div>
+
+      <!-- Center image display -->
       <div id="image-container">
         <img id="army-image" src="" alt="Army Display" />
       </div>
@@ -78,6 +84,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
