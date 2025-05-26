@@ -352,6 +352,7 @@ body.loaded {
 }
 
 /* Decorative background behind map selector */
+/* SHOW this only in standard mode */
 .map-banner-left-static {
   position: absolute;
   top: 0;
@@ -360,16 +361,20 @@ body.loaded {
   height: 138px;
   background: url('banner.left.jpg') center/cover no-repeat;
   border-radius: 8px;
-  opacity: 0.18;
-  z-index: 1;
+  opacity: 0.3;
+  z-index: 2; /* ↑ increased to sit above main background */
+  pointer-events: none;
 }
+
 
 .map-selector {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
-
+.fullscreen-mode .map-banner-left-static {
+  display: none;
+}
 
 
 
