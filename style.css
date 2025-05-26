@@ -343,7 +343,9 @@ body.light-mode .map-answer.active {
   z-index: 0;
 }
 
-
+.main-content {
+  position: relative;
+}
 
 
 
