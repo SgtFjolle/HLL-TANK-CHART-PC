@@ -361,10 +361,13 @@ body.loaded {
   background: url('banner.left.jpg') center/cover no-repeat;
   border-radius: 8px;
   opacity: 0.18;
-  z-index: 0;
+  z-index: 1;
 }
 
-
+.map-selector {
+  position: absolute;
+  z-index: 2;
+}
 
 
 
