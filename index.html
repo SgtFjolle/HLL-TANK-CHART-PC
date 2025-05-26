@@ -36,9 +36,11 @@
 
     <!-- Main content: map selector + image -->
     <div class="main-content">
-  <div class="map-selector-stack">
-    <div class="map-selector-background"></div>
-    <div class="section map-selector">
+
+      <!-- ✅ Static background banner behind map selector -->
+      <div class="map-banner-left-static"></div>
+
+      <div class="section map-selector">
         <p>Don’t know which faction/variation to pick?</p>
         <label for="map-select">Select map:</label>
         <select id="map-select">
@@ -64,13 +66,12 @@
         </select>
         <div id="map-result" class="map-result"></div>
       </div>
-    </div>
 
-        <div class="section banner-ad">
-    <a href="https://buymeacoffee.com/sgtfjolle" target="_blank">
-    <img src="banner.ad.jpg" alt="Banner Advertisement" id="banner-image">
-  </a>
-  </div>
+      <div class="section banner-ad">
+        <a href="https://buymeacoffee.com/sgtfjolle" target="_blank">
+          <img src="banner.ad.jpg" alt="Banner Advertisement" id="banner-image">
+        </a>
+      </div>
       
       <div id="image-container">
         <img id="army-image" src="" alt="Army Display" />
@@ -81,3 +82,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
