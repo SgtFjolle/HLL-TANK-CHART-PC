@@ -313,6 +313,24 @@ body.light-mode .map-answer.active {
   }
 }
 
+/* Decorative image layer behind the map selector */
+.map-selector-background {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 450px - 220px - 50px);
+  width: 220px;
+  height: 138px;
+  background: url('banner.left.jpg') center/cover no-repeat;
+  border-radius: 8px;
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.map-selector {
+  position: absolute;
+  z-index: 1; /* Ensure it stays in front */
+}
+
 
 
 
