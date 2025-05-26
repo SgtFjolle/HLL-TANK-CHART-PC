@@ -354,29 +354,27 @@ body.loaded {
 .map-wrapper {
   position: absolute;
   top: 0;
-  left: calc(50% - 450px - 220px - 50px); /* same as original .map-selector */
+  left: calc(50% - 450px - 220px - 50px);
   width: 220px;
-  height: auto; /* allow the map-selector to grow naturally */
+  height: auto;
+  z-index: 1;
 }
 
 .map-banner-left {
   position: absolute;
   top: 0;
   left: 0;
-  width: 440px;
+  width: 220px;
   height: 138px;
   background: url('banner.left.jpg') center/cover no-repeat;
   border-radius: 8px;
-  opacity: 0.18; /* Adjust if needed */
+  opacity: 0.18;
   z-index: 0;
 }
 
 .map-selector {
-  position: relative; /* Needed to sit above background */
+  position: relative;
   z-index: 1;
-  background-color: #2a2a2a;
-  border-radius: 8px;
-  padding: 15px;
 }
 
 
