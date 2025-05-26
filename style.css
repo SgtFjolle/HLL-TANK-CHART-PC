@@ -351,12 +351,12 @@ body.loaded {
   opacity: 1;
 }
 
-  /* Left-side visual balancing block */
 .map-wrapper {
-  position: relative;
-  width: 440px;
-  height: 138px;
-  flex: 0 0 440px; /* Ensures alignment with right banner */
+  position: absolute;
+  top: 0;
+  left: calc(50% - 450px - 220px - 50px); /* same as original .map-selector */
+  width: 220px;
+  height: auto; /* allow the map-selector to grow naturally */
 }
 
 .map-banner-left {
