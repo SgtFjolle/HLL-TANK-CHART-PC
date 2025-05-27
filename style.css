@@ -307,27 +307,31 @@ select {
 /* Light mode overrides */
 body.light-mode {
   background-color: #E2D8D0; /* Soft warm background for the page */
-  color: #1E2938; /* Primary text color */
+  color: #000; /* Primary text color */
 }
 
 /* Light mode header color */
 body.light-mode h1 {
-  color: #1E2938; /* Header text color */
+  color: #000; /* Header text color */
 }
 
 /* Light mode styling for dropdowns and control panels */
 body.light-mode select,
 body.light-mode .section.unified-controls,
 body.light-mode .map-selector {
-  background-color: #6e6b5e; /* White boxes for visual separation */
-  color: #1E2938; /* Text inside boxes */
+  background-color: #C2B280; /* White boxes for visual separation */
+  color: #000; /* Text inside boxes */
   border: 1px solid #000; /* Border for boxes to define shape */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Very light shadow for depth */
 }
 
+body.light-mode .map-selector p {
+  color: #000; /* Text inside boxes */
+}
+
 /* Light mode styling for labels inside boxes */
 body.light-mode .map-selector label {
-  color: #1E2938; /* Label text color */
+  color: #000; /* Label text color */
 }
 
 /* Light mode styling for all buttons, map answers, variation buttons, fullscreen toggle */
@@ -335,8 +339,8 @@ body.light-mode button,
 body.light-mode .map-answer,
 body.light-mode #variation-buttons button,
 body.light-mode #fullscreen-toggle {
-  background-color: #6e6b5e; /* Darker contrast for buttons */
-  color: #1E2938; /* Text color on buttons */
+  background-color: #3F3D31; /* Darker contrast for buttons */
+  color: #000; /* Text color on buttons */
   border: 1px solid #000; /* Subtle edge border for buttons */
   border-radius: 4px; /* Rounded edges for button styling */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06); /* Soft button shadow */
@@ -360,7 +364,7 @@ body.light-mode #fullscreen-toggle.active {
 
 /* Light mode styling for the image container */
 body.light-mode #image-container {
-  background-color: #6e6b5e; /* Matches buttons/dropdowns for visual unity */
+  background-color: #C2B280; /* Matches buttons/dropdowns for visual unity */
   border: 1px solid #000; /* Border for the image container */
 }
 
