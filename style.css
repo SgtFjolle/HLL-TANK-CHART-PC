@@ -324,11 +324,13 @@ body.light-mode .section.unified-controls {
 }
 
 /* Light mode: Top control bar in fullscreen mode */
-body.light-mode .fullscreen-mode .section.unified-controls {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  box-shadow: none;
+body.fullscreen-mode.light-mode .section.unified-controls {
+  background-color: #E2D8D0 !important; /* Match the main background */
+  border: none !important;              /* Remove any border */
+  border-radius: 0 !important;          /* Remove rounded edges */
+  box-shadow: none !important;          /* Remove shadows */
+  padding: 0 !important;                /* Remove spacing */
+  margin: 0 !important;                 /* Remove margin */
 }
     
 /* Light mode: Faction dropdown */
