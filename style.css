@@ -306,7 +306,7 @@ select {
 
 /* Light mode overrides */
 body.light-mode {
-  background-color: #f2f2f2;
+  background-color: #e6e6e6;
   color: #111;
 }
 body.light-mode h1 {
@@ -314,13 +314,13 @@ body.light-mode h1 {
 }
 body.light-mode .section.unified-controls,
 body.light-mode .map-selector {
-  background-color: #fff;
+  background-color: #e3dede;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 body.light-mode select,
 body.light-mode button,
 body.light-mode .map-answer {
-  background-color: #ddd;
+  background-color: #e6e6e6;
   color: #000;
   border: 1px solid #aaa;
 }
