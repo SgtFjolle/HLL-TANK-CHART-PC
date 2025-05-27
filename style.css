@@ -325,9 +325,10 @@ body.light-mode .section.unified-controls {
 
 /* Light mode: Top control bar in fullscreen mode */
 body.light-mode .fullscreen-mode .section.unified-controls {
-  background-color: #E2D8D0; /* Background of the top bar in fullscreen */
-  color: #000; /* Text color inside the top bar */
-  border: 1px solid #E2D8D0; /* Box border */
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
 }
     
 /* Light mode: Faction dropdown */
@@ -376,7 +377,7 @@ body.light-mode button:hover  {
 
 /* Light mode: Button hover state */
 body.light-mode .map-answer:hover {
-  background-color: #e8e5dc; /* Slightly lighter when hovered */
+  background-color: #e8e5dc !important; /* Ensure hover is visible */
 }
 
 /* Light mode: Button hover state */
