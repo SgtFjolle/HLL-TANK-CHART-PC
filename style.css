@@ -306,54 +306,57 @@ select {
 
 /* Light mode overrides */
 body.light-mode {
-  background-color: #f8f9fa; /* Soft warm gray */
-  color: #000;
+  background-color: #E2D8D0;
+  color: #1E2938;
 }
 body.light-mode h1 {
-  color: #000;
+  color: #1E2938;
 }
 body.light-mode select,
 body.light-mode .section.unified-controls,
 body.light-mode .map-selector,
 body.light-mode .map-selector p {
-  background-color: #ffffff; /* Pure white boxes */
-  color: #000;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
-  border: 1px solid #ccd1d6;
+  background-color: #FEFEFE;
+  color: #1E2938;
+  border: 1px solid #BEA481;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
 }
 body.light-mode .map-selector label {
-  color: #000;
+  color: #1E2938;
 }
 body.light-mode button,
 body.light-mode .map-answer,
 body.light-mode #variation-buttons button,
 body.light-mode #fullscreen-toggle {
-  background-color: #e2e6ea; /* Button gray */
-  color: #000;
-  border: 1px solid #bbb;
+  background-color: #BEA481;
+  color: #1E2938;
+  border: 1px solid #A58C6C;
   border-radius: 4px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 body.light-mode button:hover,
 body.light-mode .map-answer:hover,
 body.light-mode #variation-buttons button:hover,
 body.light-mode #fullscreen-toggle:hover {
-  background-color: #d6dadd;
+  background-color: #b49a76;
 }
 body.light-mode button.active,
 body.light-mode .map-answer.active,
 body.light-mode #variation-buttons button.active,
 body.light-mode #fullscreen-toggle.active {
-  background-color: #c2c6ca;
+  background-color: #a98e69;
 }
 body.light-mode #image-container {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
+  background-color: #BEA481;
+  border: 1px solid #A58C6C;
 }
 body.light-mode .section.banner-ad,
 body.light-mode .section.banner-left {
-  background-color: #ffffff;
-  border: 1px solid #bbb;
+  background-color: #FEFEFE;
+  border: 1px solid #BEA481;
+}
+body.light-mode .section.banner-left {
+  opacity: 1;
 }
 
 /* —— DESKTOP-ONLY LAYOUT TWEAK —— */
