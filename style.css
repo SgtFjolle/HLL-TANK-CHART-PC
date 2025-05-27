@@ -342,7 +342,7 @@ body.light-mode .map-answer.active {
   .map-selector {
     position: absolute;
     top: 0;
-    left: calc(50% - 450px - 220px - 100px);
+    left: calc(50% - 450px - 220px - 170px);
     width: 350px;
   }
   #image-container {
