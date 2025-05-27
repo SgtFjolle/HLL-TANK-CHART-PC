@@ -163,6 +163,8 @@ select {
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   padding: 15px;
   z-index: 3;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
 }
 .map-selector p {
   margin: 0;
@@ -182,7 +184,7 @@ select {
 }
 .map-answer {
   background-color: #444;
-  color: #fff5d8;
+  color: #ffffff;
   border: none;
   padding: 6px 10px;
   border-radius: 4px;
@@ -338,7 +340,7 @@ body.light-mode .map-answer.active {
   .map-selector {
     position: absolute;
     top: 0;
-    left: calc(50% - 450px - 220px - 60px);
+    left: calc(50% - 450px - 220px - 55px);
     width: 220px;
   }
   #image-container {
