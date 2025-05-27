@@ -342,7 +342,7 @@ body.light-mode .map-answer.active {
   .map-selector {
     position: absolute;
     top: 0;
-    left: calc(50% - 450px - 220px - 200px);
+    left: calc(50% - 450px - 220px - 190px);
     width: 300px;
   }
   #image-container {
@@ -392,5 +392,13 @@ body.loaded {
   opacity: 0.75;
 }
 
+  .banner-ad a {
+  display: inline-block;
+  box-shadow: none;
+  border: none;
+  background: none;
+  padding: 0;
+  text-decoration: none;
+}
 
 
