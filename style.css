@@ -328,7 +328,8 @@ body.light-mode .fullscreen-mode .section.unified-controls {
   background-color: #dbd8d0; /* Background of the top bar in fullscreen */
   color: #000; /* Text color inside the top bar */
   border: 0px
-
+}
+    
 /* Light mode: Faction dropdown */
 body.light-mode select {
   background-color: #dbd8d0; /* Background of the dropdown menu */
