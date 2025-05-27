@@ -310,6 +310,10 @@ body.light-mode {
   color: #000; /* Primary text color */
 }
 
+body.fullscreen-mode .container {
+  border: #E2D8D0;
+}
+
 /* Light mode header color */
 body.light-mode h1 {
   color: #000; /* Header text color */
@@ -319,7 +323,7 @@ body.light-mode h1 {
 body.light-mode select,
 body.light-mode .section.unified-controls,
 body.light-mode .map-selector {
-  background-color: #dbd6cc; /* White boxes for visual separation */
+  background-color: #dbd8d0; /* White boxes for visual separation */
   color: #000; /* Text inside boxes */
   border: 1px solid #000; /* Border for boxes to define shape */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Very light shadow for depth */
@@ -339,7 +343,7 @@ body.light-mode button,
 body.light-mode .map-answer,
 body.light-mode #variation-buttons button,
 body.light-mode #fullscreen-toggle {
-  background-color: #dbd6cc; /* Darker contrast for buttons */
+  background-color: #dbd8d0; /* Darker contrast for buttons */
   color: #000; /* Text color on buttons */
   border: 1px solid #000; /* Subtle edge border for buttons */
   border-radius: 4px; /* Rounded edges for button styling */
@@ -359,7 +363,7 @@ body.light-mode button.active,
 body.light-mode .map-answer.active,
 body.light-mode #variation-buttons button.active,
 body.light-mode #fullscreen-toggle.active {
-  background-color: #bfbaae; /* Active button shade */
+  background-color: #E2D8D0; /* Active button shade */
 }
 
 /* Light mode styling for the image container */
