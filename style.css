@@ -306,7 +306,7 @@ select {
 
 /* Light mode overrides */
 body.light-mode {
-  background-color: #e6e6e6;
+  background-color: #f5f5f5; /* Soft off-white */
   color: #000;
 }
 body.light-mode h1 {
@@ -316,23 +316,44 @@ body.light-mode select,
 body.light-mode .section.unified-controls,
 body.light-mode .map-selector,
 body.light-mode .map-selector p {
-  background-color: #bdbdbd;
+  background-color: #e0e0e0; /* Box background (slightly darker than main bg) */
   color: #000;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ccc;
+}
+body.light-mode .map-selector label {
+  color: #000;
 }
 body.light-mode button,
-body.light-mode .map-answer {
-  background-color: #e6e6e6;
+body.light-mode .map-answer,
+body.light-mode #variation-buttons button,
+body.light-mode #fullscreen-toggle {
+  background-color: #d5d5d5; /* Light gray buttons */
   color: #000;
   border: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 body.light-mode button:hover,
-body.light-mode .map-answer:hover {
-  background-color: #bbb;
+body.light-mode .map-answer:hover,
+body.light-mode #variation-buttons button:hover,
+body.light-mode #fullscreen-toggle:hover {
+  background-color: #c2c2c2;
 }
 body.light-mode button.active,
-body.light-mode .map-answer.active {
-  background-color: #aaa;
+body.light-mode .map-answer.active,
+body.light-mode #variation-buttons button.active,
+body.light-mode #fullscreen-toggle.active {
+  background-color: #a8a8a8;
+}
+body.light-mode #image-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+body.light-mode .section.banner-ad,
+body.light-mode .section.banner-left {
+  background-color: #e0e0e0;
+  border: 1px solid #bbb;
 }
 
 /* —— DESKTOP-ONLY LAYOUT TWEAK —— */
