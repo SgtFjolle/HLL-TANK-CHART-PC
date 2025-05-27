@@ -319,7 +319,7 @@ body.light-mode h1 {
 body.light-mode select,
 body.light-mode .section.unified-controls,
 body.light-mode .map-selector {
-  background-color: #E0D0AF; /* White boxes for visual separation */
+  background-color: #dbd6cc; /* White boxes for visual separation */
   color: #000; /* Text inside boxes */
   border: 1px solid #000; /* Border for boxes to define shape */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Very light shadow for depth */
@@ -351,7 +351,7 @@ body.light-mode button:hover,
 body.light-mode .map-answer:hover,
 body.light-mode #variation-buttons button:hover,
 body.light-mode #fullscreen-toggle:hover {
-  background-color: #4b493d; /* Slightly lighter hover state */
+  background-color: #e6dfd1; /* Slightly lighter hover state */
 }
 
 /* Light mode active/clicked button state */
@@ -359,12 +359,12 @@ body.light-mode button.active,
 body.light-mode .map-answer.active,
 body.light-mode #variation-buttons button.active,
 body.light-mode #fullscreen-toggle.active {
-  background-color: #5a574a; /* Active button shade */
+  background-color: #bfbaae; /* Active button shade */
 }
 
 /* Light mode styling for the image container */
 body.light-mode #image-container {
-  background-color: #E0D0AF; /* Matches buttons/dropdowns for visual unity */
+  background-color: #dbd6cc; /* Matches buttons/dropdowns for visual unity */
   border: 1px solid #000; /* Border for the image container */
 }
 
