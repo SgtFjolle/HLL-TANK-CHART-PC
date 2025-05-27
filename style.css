@@ -383,6 +383,9 @@ body.loaded {
   opacity: 1;
 }
 
+.section.banner-ad {
+  opacity: 0.5;
+}
 
 
 
