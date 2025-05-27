@@ -304,86 +304,98 @@ select {
   display: none;
 }
 
-/* Light mode overrides */
+/* Light mode: Body background and base text */
 body.light-mode {
-  background-color: #E2D8D0; /* Soft warm background for the page */
-  color: #000; /* Primary text color */
+  background-color: #E2D8D0; /* Main background color */
+  color: #000; /* Default text color for paragraphs, spans, etc. */
 }
 
-body.fullscreen-mode .container {
-  border: #E2D8D0;
-}
-
-/* Light mode header color */
+/* Light mode: Page title <h1> */
 body.light-mode h1 {
-  color: #000; /* Header text color */
+  color: #000; /* Title text color */
 }
 
-/* Light mode styling for dropdowns and control panels */
-body.light-mode select,
-body.light-mode .section.unified-controls,
+/* Light mode: Unified controls section (includes dropdown + variation row) */
+body.light-mode .section.unified-controls {
+  background-color: #dbd8d0; /* Background for unified control box */
+  color: #000; /* Text inside this section */
+  border: 1px solid #000; /* Box border */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Optional depth */
+}
+
+/* Light mode: Faction dropdown */
+body.light-mode select {
+  background-color: #dbd8d0; /* Background of the dropdown menu */
+  color: #000; /* Text inside dropdown */
+  border: 1px solid #000; /* Border of dropdown */
+}
+
+/* Light mode: Map selector panel */
 body.light-mode .map-selector {
-  background-color: #dbd8d0; /* White boxes for visual separation */
-  color: #000; /* Text inside boxes */
-  border: 1px solid #000; /* Border for boxes to define shape */
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Very light shadow for depth */
+  background-color: #dbd8d0; /* Box behind map section */
+  color: #000; /* Text inside the map selector */
+  border: 1px solid #000; /* Border of map box */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Optional box depth */
 }
 
+/* Light mode: Text paragraph inside map selector */
 body.light-mode .map-selector p {
-  color: #000; /* Text inside boxes */
+  background-color: ##bdbab3; /* Same as map box background */
+  color: #000; /* Map result/question text color */
 }
 
-/* Light mode styling for labels inside boxes */
+/* Light mode: Label text inside map selector */
 body.light-mode .map-selector label {
-  color: #000; /* Label text color */
+  background-color: #E2D8D0; /* Same as background */
+  color: #000; /* Text color for labels */
 }
 
-/* Light mode styling for all buttons, map answers, variation buttons, fullscreen toggle */
+/* Light mode: All buttons (includes variation, fullscreen, map-answer) */
 body.light-mode button,
 body.light-mode .map-answer,
 body.light-mode #variation-buttons button,
 body.light-mode #fullscreen-toggle {
-  background-color: #dbd8d0; /* Darker contrast for buttons */
-  color: #000; /* Text color on buttons */
-  border: 1px solid #000; /* Subtle edge border for buttons */
-  border-radius: 4px; /* Rounded edges for button styling */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06); /* Soft button shadow */
+  background-color: #E2D8D0; /* Button background */
+  color: #000; /* Button text color */
+  border: 1px solid #000; /* Button border */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06); /* Button shadow */
 }
 
-/* Light mode hover effect for buttons */
+/* Light mode: Button hover state */
 body.light-mode button:hover,
 body.light-mode .map-answer:hover,
 body.light-mode #variation-buttons button:hover,
 body.light-mode #fullscreen-toggle:hover {
-  background-color: #e6dfd1; /* Slightly lighter hover state */
+  background-color: #e8e5dc; /* Slightly lighter when hovered */
 }
 
-/* Light mode active/clicked button state */
+/* Light mode: Button active (clicked) state */
 body.light-mode button.active,
 body.light-mode .map-answer.active,
 body.light-mode #variation-buttons button.active,
 body.light-mode #fullscreen-toggle.active {
-  background-color: #E2D8D0; /* Active button shade */
+  background-color: #bdbab3; /* Active/clicked button state */
 }
 
-/* Light mode styling for the image container */
+/* Light mode: Image container box */
 body.light-mode #image-container {
-  background-color: #dbd6cc; /* Matches buttons/dropdowns for visual unity */
+  background-color: #bdbab3; /* Background behind the image */
   border: 1px solid #000; /* Border for the image container */
 }
 
-/* Light mode styling for the banner boxes */
-body.light-mode .section.banner-ad,
-body.light-mode .section.banner-left {
-  background-color: #FEFEFE; /* White background for banners */
-  border: 1px solid #6e6b5e; /* Border for banner containers */
+/* Light mode: Banner on right side (.banner-ad) */
+body.light-mode .section.banner-ad {
+  background-color: #E2D8D0; /* Banner background */
+  border: 1px solid #000; /* Banner border */
 }
 
-/* Light mode override for banner-left opacity */
+/* Light mode: Banner on left side (.banner-left) */
 body.light-mode .section.banner-left {
-  opacity: 1; /* Make banner fully visible in light mode */
+  background-color: #E2D8D0; /* Banner background */
+  border: 1px solid #000; /* Banner border */
+  opacity: 1; /* Ensure full visibility in light mode */
 }
-
 
 /* —— DESKTOP-ONLY LAYOUT TWEAK —— */
 @media (min-width: 768px) {
