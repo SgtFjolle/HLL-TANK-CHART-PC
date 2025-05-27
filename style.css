@@ -167,10 +167,10 @@ select {
   color: #fff5d8;
 }
 .map-selector p {
-  color: #f0f0f0;
+  color: #fff8d5;
   font-size: 1.2rem;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .map-selector label {
   font-weight: normal;
