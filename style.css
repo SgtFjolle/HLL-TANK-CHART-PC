@@ -14,8 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  overflow: visible;
-  position: relative; /* ✅ ADD THIS */
+  overflow: visible; /* allow map panel to hang off the side */
 }
 
 /* Header & mode toggle */
@@ -350,30 +349,6 @@ body {
 /* When the page has fully loaded, opacity will transition to 1 */
 body.loaded {
   opacity: 1;
-}
-
-/* Decorative background behind map selector */
-/* SHOW this only in standard mode */
-.map-banner-left-static {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 450px - 220px - 50px);
-  width: 220px;
-  height: 138px;
-  background: url('banner.left.jpg') center/cover no-repeat;
-  border-radius: 8px;
-  opacity: 0.3;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.map-selector {
-  position: absolute;
-  z-index: 3;
-}
-
-.fullscreen-mode .map-banner-left-static {
-  display: none !important;
 }
 
 
