@@ -119,6 +119,7 @@ select {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+  box-shadow: none
 }
 
 .section.banner-left {
@@ -392,13 +393,6 @@ body.loaded {
   opacity: 0.75;
 }
 
-  .banner-ad a {
-  display: inline-block;
-  box-shadow: none;
-  border: none;
-  background: none;
-  padding: 0;
-  text-decoration: none;
-}
+
 
 
