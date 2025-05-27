@@ -318,9 +318,8 @@ body.light-mode h1 {
 /* Light mode styling for dropdowns and control panels */
 body.light-mode select,
 body.light-mode .section.unified-controls,
-body.light-mode .map-selector,
-body.light-mode .map-selector p {
-  background-color: #3F3D31; /* White boxes for visual separation */
+body.light-mode .map-selector {
+  background-color: #6e6b5e; /* White boxes for visual separation */
   color: #1E2938; /* Text inside boxes */
   border: 1px solid #000; /* Border for boxes to define shape */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Very light shadow for depth */
@@ -336,7 +335,7 @@ body.light-mode button,
 body.light-mode .map-answer,
 body.light-mode #variation-buttons button,
 body.light-mode #fullscreen-toggle {
-  background-color: #3F3D31; /* Darker contrast for buttons */
+  background-color: #6e6b5e; /* Darker contrast for buttons */
   color: #1E2938; /* Text color on buttons */
   border: 1px solid #000; /* Subtle edge border for buttons */
   border-radius: 4px; /* Rounded edges for button styling */
@@ -361,7 +360,7 @@ body.light-mode #fullscreen-toggle.active {
 
 /* Light mode styling for the image container */
 body.light-mode #image-container {
-  background-color: #3F3D31; /* Matches buttons/dropdowns for visual unity */
+  background-color: #6e6b5e; /* Matches buttons/dropdowns for visual unity */
   border: 1px solid #000; /* Border for the image container */
 }
 
@@ -369,7 +368,7 @@ body.light-mode #image-container {
 body.light-mode .section.banner-ad,
 body.light-mode .section.banner-left {
   background-color: #FEFEFE; /* White background for banners */
-  border: 1px solid #3F3D31; /* Border for banner containers */
+  border: 1px solid #6e6b5e; /* Border for banner containers */
 }
 
 /* Light mode override for banner-left opacity */
