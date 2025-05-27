@@ -165,6 +165,7 @@ select {
   z-index: 3;
   font-family: Verdana, sans-serif;
   color: #fff5d8;
+  text-align: center
 }
 .map-selector p {
   color: #fff8d5;
