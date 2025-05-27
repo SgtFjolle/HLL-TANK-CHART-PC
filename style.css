@@ -115,10 +115,10 @@ select {
 }
 
 #banner-image {
+  display: block;
   max-width: 100%;
   height: auto;
   border-radius: 4px;
-  box-shadow: none
 }
 
 .section.banner-left {
@@ -393,11 +393,5 @@ body.loaded {
   opacity: 0.75;
 }
 
-.banner-ad a {
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  background: none !important;
-}
 
 
