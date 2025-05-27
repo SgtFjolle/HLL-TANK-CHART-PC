@@ -325,9 +325,9 @@ body.light-mode .section.unified-controls {
 
 /* Light mode: Top control bar in fullscreen mode */
 body.light-mode .fullscreen-mode .section.unified-controls {
-  background-color: #dbd8d0; /* Background of the top bar in fullscreen */
+  background-color: #E2D8D0; /* Background of the top bar in fullscreen */
   color: #000; /* Text color inside the top bar */
-  border: 0px
+  border: 1px solid #E2D8D0; /* Box border */
 }
     
 /* Light mode: Faction dropdown */
@@ -347,13 +347,13 @@ body.light-mode .map-selector {
 
 /* Light mode: Text paragraph inside map selector */
 body.light-mode .map-selector p {
-  background-color: #bdbab3; /* Same as map box background */
+  background-color: #dbd8d0; /* Same as map box background */
   color: #000; /* Map result/question text color */
 }
 
 /* Light mode: Label text inside map selector */
 body.light-mode .map-selector label {
-  background-color: #ebe7df; /* Same as background */
+  background-color: #dbd8d0; /* Same as background */
   color: #000; /* Text color for labels */
 }
 
@@ -370,8 +370,16 @@ body.light-mode #fullscreen-toggle {
 }
 
 /* Light mode: Button hover state */
-body.light-mode button:hover,
-body.light-mode .map-answer:hover,
+body.light-mode button:hover  {
+  background-color: #e8e5dc; /* Slightly lighter when hovered */
+}
+
+/* Light mode: Button hover state */
+body.light-mode .map-answer:hover {
+  background-color: #e8e5dc; /* Slightly lighter when hovered */
+}
+
+/* Light mode: Button hover state */
 body.light-mode #variation-buttons button:hover,
 body.light-mode #fullscreen-toggle:hover {
   background-color: #e8e5dc; /* Slightly lighter when hovered */
@@ -382,7 +390,7 @@ body.light-mode button.active,
 body.light-mode .map-answer.active,
 body.light-mode #variation-buttons button.active,
 body.light-mode #fullscreen-toggle.active {
-  background-color: #bdbab3; /* Active/clicked button state */
+  background-color: #dbdbdb; /* Active/clicked button state */
 }
 
 /* Light mode: Image container box */
