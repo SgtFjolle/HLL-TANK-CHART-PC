@@ -323,6 +323,12 @@ body.light-mode .section.unified-controls {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Optional depth */
 }
 
+/* Light mode: Top control bar in fullscreen mode */
+body.light-mode .fullscreen-mode .section.unified-controls {
+  background-color: #dbd8d0; /* Background of the top bar in fullscreen */
+  color: #000; /* Text color inside the top bar */
+  border: 0px
+
 /* Light mode: Faction dropdown */
 body.light-mode select {
   background-color: #dbd8d0; /* Background of the dropdown menu */
@@ -380,7 +386,7 @@ body.light-mode #fullscreen-toggle.active {
 
 /* Light mode: Image container box */
 body.light-mode #image-container {
-  background-color: #bdbab3; /* Background behind the image */
+  background-color: #dbd8d0; /* Background behind the image */
   border: 1px solid #000; /* Border for the image container */
 }
 
@@ -388,6 +394,7 @@ body.light-mode #image-container {
 body.light-mode .section.banner-ad {
   background-color: #E2D8D0; /* Banner background */
   border: 1px solid #000; /* Banner border */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
 }
 
 /* Light mode: Banner on left side (.banner-left) */
@@ -395,6 +402,7 @@ body.light-mode .section.banner-left {
   background-color: #E2D8D0; /* Banner background */
   border: 1px solid #000; /* Banner border */
   opacity: 1; /* Ensure full visibility in light mode */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
 }
 
 /* —— DESKTOP-ONLY LAYOUT TWEAK —— */
