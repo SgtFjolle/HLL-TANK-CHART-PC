@@ -133,6 +133,7 @@ select {
   right: 920px; /* Position it from the left*/
   top: -138px; /* Position it at the top */
   width: 440px; /* Set the desired width for the banner */
+  z-index: 2;
 }
 
 #banner-left {
@@ -160,6 +161,7 @@ select {
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   padding: 15px;
+  z-index: 3;
 }
 .map-selector p {
   margin: 0;
