@@ -163,13 +163,13 @@ select {
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   padding: 15px;
   z-index: 3;
-  font-family: 'Merriweather', serif;
+  font-family: Verdana, sans-serif;
   color: #fff5d8;
 }
 .map-selector p {
   color: #fff8d5;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: capitalize;
 }
 .map-selector label {
@@ -342,8 +342,8 @@ body.light-mode .map-answer.active {
   .map-selector {
     position: absolute;
     top: 0;
-    left: calc(50% - 450px - 220px - 54px);
-    width: 220px;
+    left: calc(50% - 450px - 220px - 100px);
+    width: 350px;
   }
   #image-container {
     flex: 1 1 auto;
