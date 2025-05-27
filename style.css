@@ -337,7 +337,7 @@ body.light-mode .map-answer.active {
   .map-selector {
     position: absolute;
     top: 0;
-    left: calc(50% - 450px - 220px - 50px);
+    left: calc(50% - 450px - 220px - 60px);
     width: 220px;
   }
   #image-container {
