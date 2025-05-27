@@ -340,13 +340,13 @@ body.light-mode .map-selector {
 
 /* Light mode: Text paragraph inside map selector */
 body.light-mode .map-selector p {
-  background-color: ##bdbab3; /* Same as map box background */
+  background-color: #bdbab3; /* Same as map box background */
   color: #000; /* Map result/question text color */
 }
 
 /* Light mode: Label text inside map selector */
 body.light-mode .map-selector label {
-  background-color: #E2D8D0; /* Same as background */
+  background-color: #ebe7df; /* Same as background */
   color: #000; /* Text color for labels */
 }
 
@@ -355,7 +355,7 @@ body.light-mode button,
 body.light-mode .map-answer,
 body.light-mode #variation-buttons button,
 body.light-mode #fullscreen-toggle {
-  background-color: #E2D8D0; /* Button background */
+  background-color: #ebe7df; /* Button background */
   color: #000; /* Button text color */
   border: 1px solid #000; /* Button border */
   border-radius: 4px; /* Rounded corners */
