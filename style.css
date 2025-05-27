@@ -121,6 +121,26 @@ select {
   border-radius: 4px;
 }
 
+.section.banner-left {
+  background-color: #2a2a2a;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Keep it outside of the main content */
+  right: 920px; /* Position it from the left*/
+  top: -138px; /* Position it at the top */
+  width: 440px; /* Set the desired width for the banner */
+}
+
+#banner-left {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
 /* Main content: map selector + image */
 .main-content {
   display: flex;
@@ -177,6 +197,11 @@ select {
 
 /* Hide the banner in fullscreen mode */
 .fullscreen-mode .section.banner-ad {
+  display: none;
+}
+
+/* Hide the banner in fullscreen mode */
+.fullscreen-mode .section.banner-left {
   display: none;
 }
 
@@ -263,6 +288,11 @@ select {
 }
 /* Hide banner in fullscreen mode */
 .fullscreen-mode .section.banner-ad {
+  display: none;
+}
+
+/* Hide banner in fullscreen mode */
+.fullscreen-mode .section.banner-left {
   display: none;
 }
 
