@@ -159,7 +159,7 @@ select {
   gap: 10px;
   background-color: #2a2a2a;
   border: 2px solid #000000;
-  border-radius: 0px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   padding: 15px;
   z-index: 3;
@@ -342,8 +342,8 @@ body.light-mode .map-answer.active {
   .map-selector {
     position: absolute;
     top: 0;
-    left: calc(50% - 450px - 220px - 170px);
-    width: 350px;
+    left: calc(50% - 450px - 220px - 250px);
+    width: 300px;
   }
   #image-container {
     flex: 1 1 auto;
