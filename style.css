@@ -2,7 +2,8 @@
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
-  background-color: #1a1a1a;
+  background: url('Background (6).png') no-repeat center center fixed;
+  background-size: cover;
   color: #fff5d8;
   transition: background-color 0.4s, color 0.4s;
 }
