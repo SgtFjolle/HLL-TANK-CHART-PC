@@ -319,6 +319,7 @@ body.light-mode h1 {
 /* Light mode: Unified controls section (includes dropdown + variation row) */
 body.light-mode .section.unified-controls {
   background-color: #dbd8d0; /* Background for unified control box */
+  transparent: 0.5;
   color: #000; /* Text inside this section */
   border: 1px solid #000; /* Box border */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Optional depth */
@@ -344,6 +345,7 @@ body.light-mode select {
 /* Light mode: Map selector panel */
 body.light-mode .map-selector {
   background-color: #dbd8d0; /* Box behind map section */
+  transparent: 0.5;
   color: #000; /* Text inside the map selector */
   border: 1px solid #000; /* Border of map box */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Optional box depth */
@@ -400,6 +402,7 @@ body.light-mode #fullscreen-toggle.active {
 /* Light mode: Image container box */
 body.light-mode #image-container {
   background-color: #dbd8d0; /* Background behind the image */
+  transparent: 0.5;
   border: 1px solid #000; /* Border for the image container */
 }
 
