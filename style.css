@@ -1,4 +1,4 @@
-/* Base styling */
+ /* Base styling */
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
@@ -480,15 +480,6 @@ body.loaded {
 
 body.light-mode .section.banner-left {
   opacity: 1;
-}
-
-body.light-mode::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background: rgba(255, 255, 255, 0.4); /* Brightens background image in light mode */
 }
 
 
