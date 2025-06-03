@@ -482,17 +482,13 @@ body.light-mode .section.banner-left {
   opacity: 1;
 }
 
-body::before {
+body.light-mode::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  background: rgba(255, 255, 255, 0.4); /* Brightens background image in light mode */
 }
 
-@media (prefers-color-scheme: light) {
-  body::before {
-    background: rgba(255, 255, 255, 0.4); /* Only applies in light mode */
-  }
-}
 
