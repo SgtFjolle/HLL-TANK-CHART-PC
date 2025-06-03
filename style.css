@@ -406,14 +406,16 @@ body.light-mode #image-container {
 /* Light mode: Banner on right side (.banner-ad) */
 body.light-mode .section.banner-ad {
   background-color: #FFF5D8; /* Banner background */
-  border: 1px solid #000; /* Banner border */
+  border: 2px solid #FFF5D8;
+  border-radius: 8px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
 }
 
 /* Light mode: Banner on left side (.banner-left) */
 body.light-mode .section.banner-left {
   background-color: #FFF5D8; /* Banner background */
-  border: 1px solid #000; /* Banner border */
+  border: 2px solid #FFF5D8;
+  border-radius: 8px;
   opacity: 1; /* Ensure full visibility in light mode */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
 }
