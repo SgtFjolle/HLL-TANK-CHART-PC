@@ -318,7 +318,7 @@ body.light-mode h1 {
 
 /* Light mode: Unified controls section (includes dropdown + variation row) */
 body.light-mode .section.unified-controls {
-  background-color: #f7f4eb; /* Background for unified control box */
+  background-color: #FFF5D8; /* Background for unified control box */
   color: #000; /* Text inside this section */
   border: 1px solid #000; /* Box border */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Optional depth */
@@ -336,14 +336,14 @@ body.fullscreen-mode.light-mode .section.unified-controls {
     
 /* Light mode: Faction dropdown */
 body.light-mode select {
-  background-color: #f7f4eb; /* Background of the dropdown menu */
+  background-color: #FFF5D8; /* Background of the dropdown menu */
   color: #000; /* Text inside dropdown */
   border: 1px solid #000; /* Border of dropdown */
 }
 
 /* Light mode: Map selector panel */
 body.light-mode .map-selector {
-  background-color: #f7f4eb; /* Box behind map section */
+  background-color: #FFF5D8; /* Box behind map section */
   color: #000; /* Text inside the map selector */
   border: 1px solid #000; /* Border of map box */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04); /* Optional box depth */
@@ -351,13 +351,13 @@ body.light-mode .map-selector {
 
 /* Light mode: Text paragraph inside map selector */
 body.light-mode .map-selector p {
-  background-color: #f7f4eb; /* Same as map box background */
+  background-color: #FFF5D8; /* Same as map box background */
   color: #000; /* Map result/question text color */
 }
 
 /* Light mode: Label text inside map selector */
 body.light-mode .map-selector label {
-  background-color: #f7f4eb; /* Same as background */
+  background-color: #FFF5D8; /* Same as background */
   color: #000; /* Text color for labels */
 }
 
@@ -366,7 +366,7 @@ body.light-mode button,
 body.light-mode .map-answer,
 body.light-mode #variation-buttons button,
 body.light-mode #fullscreen-toggle {
-  background-color: #ebe7df; /* Button background */
+  background-color: #FFF5D8; /* Button background */
   color: #000; /* Button text color */
   border: 1px solid #000; /* Button border */
   border-radius: 4px; /* Rounded corners */
@@ -399,20 +399,20 @@ body.light-mode #fullscreen-toggle.active {
 
 /* Light mode: Image container box */
 body.light-mode #image-container {
-  background-color: #f7f4eb; /* Background behind the image */
+  background-color: #FFF5D8; /* Background behind the image */
   border: 1px solid #000; /* Border for the image container */
 }
 
 /* Light mode: Banner on right side (.banner-ad) */
 body.light-mode .section.banner-ad {
-  background-color: #f7f4eb; /* Banner background */
+  background-color: #FFF5D8; /* Banner background */
   border: 1px solid #000; /* Banner border */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
 }
 
 /* Light mode: Banner on left side (.banner-left) */
 body.light-mode .section.banner-left {
-  background-color: #f7f4eb; /* Banner background */
+  background-color: #FFF5D8; /* Banner background */
   border: 1px solid #000; /* Banner border */
   opacity: 1; /* Ensure full visibility in light mode */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
