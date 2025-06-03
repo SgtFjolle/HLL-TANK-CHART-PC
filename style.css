@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
-  background: url('Background (6).png') no-repeat center center fixed;
+  background: url('TankRec_background.png') no-repeat center center fixed;
   background-size: cover;
   color: #fff5d8;
   transition: background-color 0.4s, color 0.4s;
@@ -305,9 +305,9 @@ select {
   display: none;
 }
 
-/* Light mode: Body background and base text */
 body.light-mode {
-  background-color: #E2D8D0; /* Main background color */
+  background: url('TankRec_light.png') no-repeat center center fixed;
+  background-size: cover;
   color: #000; /* Default text color for paragraphs, spans, etc. */
 }
 
