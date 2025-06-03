@@ -306,7 +306,7 @@ select {
 }
 
 body.light-mode {
-  background: url('TankRec_light.png') no-repeat center center fixed;
+  background: url('TankRec_light3.png') no-repeat center center fixed;
   background-size: cover;
   color: #000; /* Default text color for paragraphs, spans, etc. */
 }
