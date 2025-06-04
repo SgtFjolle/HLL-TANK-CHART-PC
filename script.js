@@ -18,6 +18,7 @@ const imageMap = {
   },
   soviet: {
     "Soviet Armed Forces": "soviet.jpg"
+    "Soviet Winter Camo – Coming in Patch 17.1": null
   },
   british: {
     "British Army": "british.jpg",
@@ -39,14 +40,31 @@ function updateVariations() {
   Object.keys(variations).forEach((variation, index) => {
     const btn = document.createElement('button');
     btn.textContent = variation;
-    btn.onclick = () => {
-      showImage(category, variation);
-      currentVariation = variation;
-      document.querySelectorAll('#variation-buttons button')
-              .forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    };
+
+    if (!variations[variation]) {
+      btn.disabled = true;
+      btn.classList.add('variation-disabled');
+    } else {
+      btn.onclick = () => {
+        showImage(category, variation);
+        currentVariation = variation;
+        document.querySelectorAll('#variation-buttons button')
+                .forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      };
+    }
+
     variationButtons.appendChild(btn);
+
+    // Auto-select first variation if valid and not from map
+    if (!fromMapBlock && index === 0 && variations[variation]) {
+      btn.click();
+    }
+  });
+
+  fromMapBlock = false;
+}
+
 
     // If the faction selection is from the map block, don't select the first variation
     if (!fromMapBlock && index === 0) {
