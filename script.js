@@ -66,16 +66,6 @@ function updateVariations() {
 }
 
 
-    // If the faction selection is from the map block, don't select the first variation
-    if (!fromMapBlock && index === 0) {
-      btn.click(); // Automatically select the first variation only if the selection is from the dropdown
-    }
-  });
-
-  // Reset the flag after updating variations
-  fromMapBlock = false;
-}
-
 // Show the image based on the selected variation
 function showImage(category, variation) {
   armyImage.classList.remove('visible'); // Hide image initially
