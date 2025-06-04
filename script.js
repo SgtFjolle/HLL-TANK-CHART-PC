@@ -17,7 +17,7 @@ const imageMap = {
     "United States Army Winter Camo": "us_winter.jpg"
   },
   soviet: {
-    "Soviet Armed Forces": "soviet.jpg"
+    "Soviet Armed Forces": "soviet.jpg",
     "Soviet Winter Camo – Coming in Patch 17.1": null
   },
   british: {
