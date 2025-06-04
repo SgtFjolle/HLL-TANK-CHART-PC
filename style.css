@@ -484,4 +484,16 @@ body.light-mode .section.banner-left {
   opacity: 1;
 }
 
+.variation-disabled {
+  opacity: 0.6;
+  background-color: #888;
+  border: 1px dashed #aaa;
+  cursor: not-allowed;
+  color: #eee;
+}
 
+body.light-mode .variation-disabled {
+  background-color: #ddd;
+  border: 1px dashed #999;
+  color: #444;
+}
