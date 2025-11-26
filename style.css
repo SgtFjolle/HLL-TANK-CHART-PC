@@ -24,13 +24,13 @@ body {
 }
 h1 {
   font-size: 2em;
-  margin: 0;
+  text-align:center;
   color: #FFF5D8;
 }
 
 /* Unified controls panel */
 .section.unified-controls {
-  background-color: #2a2a2a;
+  background-color: #111111;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   padding: 15px;
@@ -70,7 +70,7 @@ select {
 #variation-buttons button,
 #fullscreen-toggle {
   padding: 10px 14px;
-  background-color: #3a3a3a;
+  background-color: #111111;
   border: 1px solid #666;
   color: #fff5d8;
   border-radius: 4px;
@@ -94,7 +94,7 @@ select {
 }
 
 .section.banner-ad {
-  background-color: #2a2a2a;
+  background-color: #111111;
   border: 2px solid #000000;
   border-radius: 8px;
   display: flex;
@@ -114,7 +114,7 @@ select {
 }
 
 .section.banner-left {
-  background-color: #2a2a2a;
+  background-color: #111111;
   border: 2px solid #000000;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -149,7 +149,7 @@ select {
   flex: 1;
   flex-direction: column;
   gap: 10px;
-  background-color: #2a2a2a;
+  background-color: #111111;
   border: 2px solid #000000;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
@@ -178,7 +178,7 @@ select {
   margin: 6px 0;
 }
 .map-answer {
-  background-color: #444;
+  background-color: #111111;
   color: #fff5d8;
   border: none;
   padding: 6px 10px;
