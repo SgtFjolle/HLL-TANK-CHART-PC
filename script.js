@@ -18,7 +18,7 @@ const imageMap = {
   },
   soviet: {
     "Soviet Armed Forces": "soviet.jpg",
-    "Soviet Winter Camo – Coming in Patch 17.1": null
+    "Soviet Winter Camo": "soviet_winter.jpg"
   },
   british: {
     "British Army": "british.jpg",
@@ -124,7 +124,7 @@ const mapData = {
     axis:   { category: 'german', variation: 'German Army Winter Camo' }
   },
   "Kharkov": {
-    allies: { category: 'soviet', variation: 'Soviet Armed Forces' },
+    allies: { category: 'soviet', variation: 'Soviet Winter Camo' },
     axis:   { category: 'german', variation: 'German Army Winter Camo' }
   },
   "Kursk": {
