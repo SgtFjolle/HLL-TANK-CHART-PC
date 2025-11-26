@@ -211,8 +211,8 @@ select {
 #image-container {
   width: 900px; /* Ensures it takes up the full width like the header */
   text-align: center;
-  border: 2px solid #111;
-  background-color: #111;
+  border: 2px solid #000;
+  background-color: #000;
   border-radius: 8px;
   margin: 0 auto; /* Centers the container horizontally */
   transition: all 0.4s ease;
@@ -280,6 +280,9 @@ select {
   align-items: center;
   flex: none;
   width: auto;
+  margin: 4;
+  padding: 0;
+  gap: 0;
 }
 .fullscreen-mode #army-image {
   display: block;
