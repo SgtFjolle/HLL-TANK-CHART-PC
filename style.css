@@ -103,7 +103,7 @@ select {
   justify-content: center;
   align-items: center;
   position: absolute; /* Keep it outside of the main content */
-  left: 920px; /* Position it from the left*/
+  left: 1020px; /* Position it from the left*/
   top: -138px; /* Position it at the top */
   width: 440px; /* Set the desired width for the banner */
 }
@@ -124,7 +124,7 @@ select {
   justify-content: center;
   align-items: center;
   position: absolute; /* Keep it outside of the main content */
-  right: 920px; /* Position it from the left*/
+  right: 1020px; /* Position it from the left*/
   top: -138px; /* Position it at the top */
   width: 440px; /* Set the desired width for the banner */
   z-index: 2;
@@ -233,7 +233,7 @@ select {
 .fullscreen-mode .container {
   max-width: 95vw;
   width: 95vw;
-  height: 100vh;
+  height: 95vh;
   padding: 2px;
   display: flex;
   flex-direction: column;
