@@ -212,6 +212,7 @@ select {
   width: 900px; /* Ensures it takes up the full width like the header */
   text-align: center;
   background-color: #000;
+  border: 2px, #000;
   border-radius: 8px;
   margin: 0 auto; /* Centers the container horizontally */
   transition: all 0.4s ease;
@@ -233,7 +234,7 @@ select {
   max-width: 90vw;
   width: 90vw;
   height: 100vh;
-  padding: 10px;
+  padding: 2px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -281,12 +282,13 @@ select {
   margin: 4;
   padding: 0;
   gap: 0;
-  margin-left: 0px;
+  margin-left: 20px;
   border: 0px;
 }
 .fullscreen-mode #army-image {
   display: block;
   margin: 0 auto;
+  padding: 0;
   max-width: 95%;
   max-height: 95%;
 }
