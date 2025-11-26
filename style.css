@@ -32,6 +32,7 @@ h1 {
 
 /* Unified controls panel */
 .section.unified-controls {
+  max-width: 87,5%;
   background-color: rgba(0, 0, 0, 0.65);
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
@@ -47,12 +48,11 @@ h1 {
 }
 .variation-select-group {
   display: flex;
-  justify-content: flex-start;
+  position: relative;
   gap: 10px;
 }
 .variation-row {
   display: flex;
-  justify-content: flex-start;
   gap: 10px;
 }
 select {
@@ -69,30 +69,11 @@ select {
   flex-wrap: wrap;
   gap: 10px;
 }
-#variation-buttons button,
-#fullscreen-toggle {
-  padding: 10px 14px;
-  background-color: #000000;
-  border: 1px solid #666;
-  color: #fff5d8;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  font-size: 14px;
-}
-#variation-buttons button:hover,
-#fullscreen-toggle:hover {
-  background-color: #505050;
-}
-#variation-buttons button.active,
-#fullscreen-toggle.active {
-  background-color: #777;
-  transform: scale(0.98);
-}
+
 .fullscreen-right {
   display: flex;
   justify-content: flex-end;
-  flex: 1;
+  float: right;
 }
 
 /* Main content: map selector + image */
@@ -173,12 +154,32 @@ select {
   transition: all 0.4s ease;
 }
 
-/* Hide map-selector in fullscreen */
+/* Fullscreen mode */
+#variation-buttons button,
+#fullscreen-toggle {
+  padding: 10px 14px;
+  background-color: #000000;
+  border: 1px solid #666;
+  color: #fff5d8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 14px;
+}
+#variation-buttons button:hover,
+#fullscreen-toggle:hover {
+  background-color: #505050;
+}
+#variation-buttons button.active,
+#fullscreen-toggle.active {
+  background-color: #777;
+  transform: scale(0.98);
+}
+
 .fullscreen-mode .map-selector {
   display: none;
 }
 
-/* Fullscreen mode */
 .fullscreen-mode .container {
   max-width: 85vw;
   width: 85vw;
