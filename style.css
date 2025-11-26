@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -103,9 +103,9 @@ select {
   justify-content: center;
   align-items: center;
   position: absolute; /* Keep it outside of the main content */
-  left: 1020px; /* Position it from the left*/
+  left: 1220px; /* Position it from the left*/
   top: -138px; /* Position it at the top */
-  width: 440px; /* Set the desired width for the banner */
+  width: 240px; /* Set the desired width for the banner */
 }
 
 #banner-image {
@@ -124,9 +124,9 @@ select {
   justify-content: center;
   align-items: center;
   position: absolute; /* Keep it outside of the main content */
-  right: 1020px; /* Position it from the left*/
+  right: 1220px; /* Position it from the left*/
   top: -138px; /* Position it at the top */
-  width: 440px; /* Set the desired width for the banner */
+  width: 240px; /* Set the desired width for the banner */
   z-index: 2;
 }
 
@@ -209,7 +209,7 @@ select {
 
 /* Image container */
 #image-container {
-  width: 1000px; /* Ensures it takes up the full width like the header */
+  width: 1240%; /* Ensures it takes up the full width like the header */
   text-align: center;
   background-color: #000;
   border: 2px;
@@ -278,7 +278,7 @@ select {
   justify-content: center;
   align-items: center;
   flex: none;
-  width: auto;
+  width: 90%;
   margin: 4;
 
 }
