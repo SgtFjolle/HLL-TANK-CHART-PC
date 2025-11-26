@@ -38,6 +38,7 @@ h1 {
   padding: 15px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 15px;
 }
 .faction-select-group {
@@ -52,7 +53,6 @@ h1 {
 .variation-row {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   gap: 10px;
 }
 select {
@@ -95,7 +95,7 @@ select {
   flex: 1;
 }
 
-.section.banner-ad {
+/* .section.banner-ad {
   background-color: #000000;
   border: 2px solid #111111;
   border-radius: 8px;
@@ -108,14 +108,14 @@ select {
   width: 240px; /* Set the desired width for the banner */
 }
 
-#banner-image {
+/* #banner-image { 
   display: block;
   max-width: 100%;
   height: auto;
   border-radius: 2px;
-}
+} /*
 
-.section.banner-left {
+/* .section.banner-left {
   background-color: #000000;
   border: 2px solid #111111;
   border-radius: 8px;
@@ -127,14 +127,14 @@ select {
   right: 1220px; /* Position it from the left*/
   top: -138px; /* Position it at the top */
   width: 240px; /* Set the desired width for the banner */
-  z-index: 2;
-}
+  z-index: 2; 
+} /*
 
 #banner-left {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
-}
+} 
 
 /* Main content: map selector + image */
 .main-content {
