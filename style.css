@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -209,17 +209,17 @@ select {
 
 /* Image container */
 #image-container {
-  width: 900px; /* Ensures it takes up the full width like the header */
+  width: 1000px; /* Ensures it takes up the full width like the header */
   text-align: center;
   background-color: #000;
-  border: 2px, #000;
+  border: 2px;
   border-radius: 8px;
   margin: 0 auto; /* Centers the container horizontally */
   transition: all 0.4s ease;
 }
 #army-image {
   max-width: 100%;
-  max-height: 75vh;
+  max-height: 100%;
   height: auto;
   transition: all 0.4s ease;
 }
@@ -231,8 +231,8 @@ select {
 
 /* Fullscreen mode */
 .fullscreen-mode .container {
-  max-width: 90vw;
-  width: 90vw;
+  max-width: 95vw;
+  width: 95vw;
   height: 100vh;
   padding: 2px;
   display: flex;
@@ -280,17 +280,14 @@ select {
   flex: none;
   width: auto;
   margin: 4;
-  padding: 0;
-  gap: 0;
-  margin-left: 20px;
-  border: 0px;
+
 }
 .fullscreen-mode #army-image {
   display: block;
   margin: 0 auto;
   padding: 0;
-  max-width: 95%;
-  max-height: 95%;
+  max-width: 100%;
+  max-height: 100%;
 }
 /* Hide banner in fullscreen mode */
 .fullscreen-mode .section.banner-ad {
