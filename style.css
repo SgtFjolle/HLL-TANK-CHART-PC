@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1150px;
+  max-width: 87,5%;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -37,7 +37,7 @@ h1 {
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   padding: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 15px;
 }
 .faction-select-group {
@@ -46,12 +46,12 @@ h1 {
 }
 .variation-select-group {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
   gap: 10px;
 }
 .variation-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
