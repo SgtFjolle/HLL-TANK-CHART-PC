@@ -20,7 +20,7 @@ body {
 
 /* Header & mode toggle */
 .header {
-  align-items: center;
+  margin: 0 auto;
 }
 h1 {
   font-size: 2em;
@@ -30,7 +30,8 @@ h1 {
 
 /* Unified controls panel */
 .section.unified-controls {
-  background-color: #111111;
+  background-color: #000000;
+  opacity: 0.6;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   padding: 15px;
@@ -70,7 +71,7 @@ select {
 #variation-buttons button,
 #fullscreen-toggle {
   padding: 10px 14px;
-  background-color: #111111;
+  background-color: #000000;
   border: 1px solid #666;
   color: #fff5d8;
   border-radius: 4px;
@@ -94,8 +95,8 @@ select {
 }
 
 .section.banner-ad {
-  background-color: #111111;
-  border: 2px solid #000000;
+  background-color: #000000;
+  border: 2px solid #111111;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -114,8 +115,8 @@ select {
 }
 
 .section.banner-left {
-  background-color: #111111;
-  border: 2px solid #000000;
+  background-color: #000000;
+  border: 2px solid #111111;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   display: flex;
@@ -149,8 +150,8 @@ select {
   flex: 1;
   flex-direction: column;
   gap: 10px;
-  background-color: #111111;
-  border: 2px solid #000000;
+  background-color: #000000;
+  border: 2px solid #111111;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   padding: 15px;
