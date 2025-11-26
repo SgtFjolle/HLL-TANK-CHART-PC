@@ -211,7 +211,6 @@ select {
 #image-container {
   width: 900px; /* Ensures it takes up the full width like the header */
   text-align: center;
-  border: 2px solid #000;
   background-color: #000;
   border-radius: 8px;
   margin: 0 auto; /* Centers the container horizontally */
@@ -221,7 +220,6 @@ select {
   max-width: 100%;
   max-height: 75vh;
   height: auto;
-  border-radius: 2px;
   transition: all 0.4s ease;
 }
 
@@ -283,6 +281,8 @@ select {
   margin: 4;
   padding: 0;
   gap: 0;
+  margin-left: 0px;
+  border: 0px;
 }
 .fullscreen-mode #army-image {
   display: block;
@@ -371,10 +371,4 @@ body.light-mode .section.banner-left {
   border: 1px dashed #aaa;
   cursor: not-allowed;
   color: #eee;
-}
-
-body.light-mode .variation-disabled {
-  background-color: #ddd;
-  border: 1px dashed #999;
-  color: #444;
 }
