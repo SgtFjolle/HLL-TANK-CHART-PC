@@ -95,47 +95,6 @@ select {
   flex: 1;
 }
 
-/* .section.banner-ad {
-  background-color: #000000;
-  border: 2px solid #111111;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute; /* Keep it outside of the main content */
-  left: 1220px; /* Position it from the left*/
-  top: -138px; /* Position it at the top */
-  width: 240px; /* Set the desired width for the banner */
-}
-
-/* #banner-image { 
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 2px;
-} /*
-
-/* .section.banner-left {
-  background-color: #000000;
-  border: 2px solid #111111;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute; /* Keep it outside of the main content */
-  right: 1220px; /* Position it from the left*/
-  top: -138px; /* Position it at the top */
-  width: 240px; /* Set the desired width for the banner */
-  z-index: 2; 
-} /*
-
-#banner-left {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-} 
-
 /* Main content: map selector + image */
 .main-content {
   display: flex;
@@ -195,16 +154,6 @@ select {
 #image-container {
   flex: 1 1 auto;
   margin-left: 20px;
-}
-
-/* Hide the banner in fullscreen mode */
-.fullscreen-mode .section.banner-ad {
-  display: none;
-}
-
-/* Hide the banner in fullscreen mode */
-.fullscreen-mode .section.banner-left {
-  display: none;
 }
 
 /* Image container */
@@ -290,33 +239,7 @@ select {
   max-width: 100%;
   max-height: 100%;
 }
-/* Hide banner in fullscreen mode */
-.fullscreen-mode .section.banner-ad {
-  display: none;
-}
 
-/* Hide banner in fullscreen mode */
-.fullscreen-mode .section.banner-left {
-  display: none;
-}
-
-
-/* —— DESKTOP-ONLY LAYOUT TWEAK —— */
-@media (min-width: 768px) {
-  .main-content {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  .map-selector {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 450px - 220px - 190px);
-    width: 300px;
-  }
-  #image-container {
-    flex: 1 1 auto;
-  }
   /* Style for the buttons */
 #variation-buttons button,
 #fullscreen-toggle {
@@ -355,20 +278,4 @@ body {
 /* When the page has fully loaded, opacity will transition to 1 */
 body.loaded {
   opacity: 1;
-}
-
-.section.banner-left {
-  opacity: 1;
-}
-
-body.light-mode .section.banner-left {
-  opacity: 1;
-}
-
-.variation-disabled {
-  opacity: 0.6;
-  background-color: #888;
-  border: 1px dashed #aaa;
-  cursor: not-allowed;
-  color: #eee;
 }
