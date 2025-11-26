@@ -243,11 +243,12 @@ select {
 .fullscreen-mode .unified-controls {
   flex-direction: row;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
   background: none;
   box-shadow: none;
   padding: 0;
   gap: 20px;
+  width: 85%;
 }
 .fullscreen-mode .main-content {
   display: flex;
@@ -260,10 +261,10 @@ select {
 }
 .fullscreen-mode .variation-row {
   flex: 2;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .fullscreen-mode .variation-select-group {
-  justify-content: center;
+  justify-content: flex-start;
 }
 .fullscreen-mode .fullscreen-right {
   flex: 1;
