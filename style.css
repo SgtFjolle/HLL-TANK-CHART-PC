@@ -231,9 +231,9 @@ select {
 
 /* Fullscreen mode */
 .fullscreen-mode .container {
-  max-width: 95vw;
-  width: 95vw;
-  height: 95vh;
+  max-width: 85vw;
+  width: 85vw;
+  height: auto;
   padding: 2px;
   display: flex;
   flex-direction: column;
