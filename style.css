@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -209,7 +209,7 @@ select {
 
 /* Image container */
 #image-container {
-  width: 1240%; /* Ensures it takes up the full width like the header */
+  width: 1150px; /* Ensures it takes up the full width like the header */
   text-align: center;
   background-color: #000;
   border: 2px;
@@ -243,7 +243,7 @@ select {
 .fullscreen-mode .unified-controls {
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   background: none;
   box-shadow: none;
   padding: 0;
@@ -278,7 +278,7 @@ select {
   justify-content: center;
   align-items: center;
   flex: none;
-  width: 90%;
+  width: 85%;
   margin: 4;
 
 }
